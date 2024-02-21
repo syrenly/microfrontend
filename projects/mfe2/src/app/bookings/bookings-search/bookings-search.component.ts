@@ -2,10 +2,11 @@ import { Component, ViewChild, ViewContainerRef } from "@angular/core";
 
 @Component({
 	selector: "app-bookings-search",
+	styleUrl: "./bookings-search.component.css",
 	templateUrl: "./bookings-search.component.html",
 })
 export class BookingsSearchComponent {
-	@ViewChild("vc", { read: ViewContainerRef, static: true })
+	@ViewChild("viewContainer", { read: ViewContainerRef, static: true })
 	viewContainer: ViewContainerRef | undefined;
 
 	search(): void {

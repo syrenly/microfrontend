@@ -1,6 +1,6 @@
 # Microfrontend
 
-👋 Hi! This is a demo for an Angular 17 application with dynamic microfrontend: based on the package **@angular-architects/module-federation**, the microfrontend applications will be dynamically loaded through the router.
+👋 Hi! This is a demo for an Angular 17 application with dynamic microfrontend: based on the package **@angular-architects/module-federation** an **@nx**, the microfrontend applications will be dynamically loaded through the router.
 
 Demonstrates webpack 5 Module Federation 17 with Angular 17 and the Angular Router.
 

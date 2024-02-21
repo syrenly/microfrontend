@@ -12,6 +12,7 @@ export const APP_ROUTES: Routes = [
 		path: "config",
 		component: ConfigComponent,
 	},
+	// This was the configuration before the dynamic import :-)
 	// {
 	// 	path: "flights",
 	// 	loadChildren: () =>

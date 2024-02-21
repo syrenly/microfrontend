@@ -4,7 +4,6 @@ module.exports = withModuleFederationPlugin({
 	name: "mfe1",
 
 	exposes: {
-		// Adjusted line:
 		"./Module": "./projects/mfe2/src/app/bookings/bookings.module.ts",
 	},
 

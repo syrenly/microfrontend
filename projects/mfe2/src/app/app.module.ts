@@ -7,13 +7,14 @@ import { HomeComponent } from "./home/home.component";
 import { APP_ROUTES } from "./app.routes";
 
 @NgModule({
-	imports: [
-		BrowserModule,
-		// BookingsModule,
-		RouterModule.forRoot(APP_ROUTES),
-	],
-	declarations: [HomeComponent, AppComponent],
-	providers: [],
-	bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        // BookingsModule,
+        RouterModule.forRoot(APP_ROUTES),
+        HomeComponent,
+    ],
+    declarations: [AppComponent],
+    providers: [],
+    bootstrap: [AppComponent],
 })
 export class AppModule {}

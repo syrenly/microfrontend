@@ -1,12 +1,13 @@
 import { Component, ViewChild, ViewContainerRef } from "@angular/core";
 
 @Component({
-    selector: "app-flights-search",
-    templateUrl: "./flights-search.component.html",
-    standalone: true,
+	selector: "app-flights-search",
+	templateUrl: "./flights-search.component.html",
+	styleUrl: "./flights-search.component.scss",
+	standalone: true,
 })
 export class FlightsSearchComponent {
-	@ViewChild("vc", { read: ViewContainerRef, static: true })
+	@ViewChild("viewContainer", { read: ViewContainerRef, static: true })
 	viewContainer: ViewContainerRef | undefined;
 
 	search(): void {

@@ -2,12 +2,9 @@ const { shareAll, withModuleFederationPlugin } = require("@angular-architects/mo
 
 module.exports = withModuleFederationPlugin({
 	name: "mfe1",
-
 	exposes: {
-		// Adjusted line:
-		"./Module": "./projects/mfe1/src/app/flights/flights.module.ts",
+		"./Component": "./projects/mfe1/src/app/flights/flights-search/flights-search.component",
 	},
-
 	shared: {
 		...shareAll({ singleton: true, strictVersion: true, requiredVersion: "auto" }),
 	},

@@ -9,7 +9,6 @@ export const APP_ROUTES: Routes = [
 	},
 	{
 		path: "flights",
-		loadChildren: () =>
-			import("./flights/flights-search/flights-search.component").then(m => m.FlightsSearchComponent),
+		loadChildren: () => import("./flights/flights.routes").then(r => r.FLIGHTS_ROUTES),
 	},
 ];

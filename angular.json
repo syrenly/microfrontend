@@ -24,7 +24,7 @@
 						"tsConfig": "projects/shell/tsconfig.app.json",
 						"aot": true,
 						"assets": ["projects/shell/src/favicon.ico", "projects/shell/src/assets"],
-						"styles": [],
+						"styles": ["projects/shell/src/styles.scss"],
 						"scripts": [],
 						"extraWebpackConfig": "projects/shell/webpack.config.js",
 						"commonChunk": false

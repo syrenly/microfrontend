@@ -230,7 +230,7 @@
 						"tsConfig": "projects/mfe2/tsconfig.app.json",
 						"aot": true,
 						"assets": ["projects/mfe2/src/favicon.ico", "projects/mfe2/src/assets"],
-						"styles": [],
+						"styles": ["projects/shell/src/styles.scss"],
 						"scripts": [],
 						"extraWebpackConfig": "projects/mfe2/webpack.config.js",
 						"commonChunk": false

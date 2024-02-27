@@ -1,10 +1,10 @@
 import { Component, ViewChild, ViewContainerRef } from "@angular/core";
 
 @Component({
-    selector: "app-bookings-search",
-    styleUrl: "./bookings-search.component.css",
-    templateUrl: "./bookings-search.component.html",
-    standalone: true,
+	selector: "app-bookings-search",
+	styleUrl: "./bookings-search.component.scss",
+	templateUrl: "./bookings-search.component.html",
+	standalone: true,
 })
 export class BookingsSearchComponent {
 	@ViewChild("viewContainer", { read: ViewContainerRef, static: true })

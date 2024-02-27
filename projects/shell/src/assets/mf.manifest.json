@@ -12,6 +12,12 @@
 		"displayName": "Bookings",
 		"routePath": "bookings",
 		"ngModuleName": "BOOKING_ROUTES"
+	},
+	"NearbyComponent": {
+		"remoteEntry": "http://localhost:4201/remoteEntry.js",
+		"displayName": "HotelComponent",
+		"exposedModule": "./NearbyComponent",
+		"ngModuleName": "HotelComponent"
 	}
 }
 

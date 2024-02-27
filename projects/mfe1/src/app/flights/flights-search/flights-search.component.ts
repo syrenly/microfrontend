@@ -10,8 +10,6 @@ export class FlightsSearchComponent {
 	@ViewChild("viewContainer", { read: ViewContainerRef, static: true })
 	viewContainer!: ViewContainerRef;
 
-	constructor(private readonly viewContainerRef: ViewContainerRef) {}
-
 	search(): void {
 		alert("Not implemented for this demo!");
 	}

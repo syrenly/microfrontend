@@ -1,6 +1,6 @@
-import { getManifest } from "@angular-architects/module-federation";
+import { getManifest, loadRemoteModule } from "@angular-architects/module-federation";
 import { NgFor } from "@angular/common";
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild, ViewContainerRef } from "@angular/core";
 import { Router, RouterLink, RouterOutlet } from "@angular/router";
 import { CustomManifest, CustomRemoteConfig } from "./utils/config";
 import { buildRoutes } from "./utils/routes";
@@ -13,7 +13,11 @@ import { buildRoutes } from "./utils/routes";
 	imports: [RouterLink, NgFor, RouterOutlet],
 })
 export class AppComponent implements OnInit {
-	remotes: CustomRemoteConfig[] = [];
+	@ViewChild("viewContainer", { read: ViewContainerRef, static: true })
+	viewContainer!: ViewContainerRef;
+
+	remoteComponents: CustomRemoteConfig[] = [];
+	remoteRoutes: CustomRemoteConfig[] = [];
 
 	constructor(private router: Router) {}
 
@@ -22,6 +26,18 @@ export class AppComponent implements OnInit {
 		const routes = buildRoutes(manifest);
 		this.router.resetConfig(routes);
 
-		this.remotes = Object.values(manifest);
+		const remotes = Object.values(manifest);
+		this.remoteRoutes = remotes.filter(r => r.exposedModule === "./routes");
+		this.remoteComponents = remotes.filter(r => r.exposedModule === "./NearbyComponent");
+	}
+
+	renderComponent(index: number): void {
+		this.viewContainer.clear();
+		const { remoteEntry, remoteName, exposedModule, displayName } = this.remoteComponents[index];
+		loadRemoteModule({
+			type: "module",
+			remoteEntry,
+			exposedModule,
+		}).then(c => this.viewContainer.createComponent(c[displayName]));
 	}
 }

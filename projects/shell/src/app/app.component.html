@@ -20,5 +20,8 @@
 <router-outlet></router-outlet>
 
 <div #viewContainer></div>
-
-<div #advertisementViewContainer></div>
+<div
+	[style.height.px]="50"
+	[style.max-width.%]="33">
+	<ng-container #advertisementViewContainer></ng-container>
+</div>

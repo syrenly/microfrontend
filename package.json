@@ -3,13 +3,13 @@
 	"version": "0.0.0",
 	"scripts": {
 		"ng": "ng",
-		"start:shell": "ng serve shell  -o",
+		"start:shell": "ng serve shell -o",
 		"start:mfe1": "ng serve mfe1 -o",
 		"start:mfe2": "ng serve mfe2 -o",
 		"build:shell": "ng build shell",
 		"build:mfe1": "ng build mfe1",
 		"build:mfe2": "ng build mfe2",
-		"start": "concurrently \"npm run start:shell\" \"npm run start:mfe1\" \"npm run start:mfe2\" ",
+		"start": "npm run start:mfe1 && npm run start:mfe2 && npm run start:shell",
 		"build": "npm run build:shell && npm run build:mfe1 && npm run build:mfe2",
 		"test": "ng test",
 		"lint": "ng lint",
@@ -57,3 +57,4 @@
 		"webpack-dev-server": "^4.7.1"
 	}
 }
+

@@ -65,7 +65,8 @@
 					"configurations": {
 						"development": {
 							"buildTarget": "shell:build:development",
-							"extraWebpackConfig": "projects/shell/webpack.prod.config.js"
+							"extraWebpackConfig": "projects/shell/webpack.prod.config.js",
+							"proxyConfig": "projects/shell/src/assets/proxy.conf.json"
 						},
 						"production": {
 							"buildTarget": "shell:build:production",

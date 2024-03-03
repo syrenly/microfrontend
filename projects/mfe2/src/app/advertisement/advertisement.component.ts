@@ -14,10 +14,10 @@ interface IAdvertisementListModel extends IListModel {
 })
 export class AdvertisementComponent implements MfeListBase, OnInit {
 	purpose: Purpose = "advertisement";
-	advs: IAdvertisementListModel[] = [];
+	ads: IAdvertisementListModel[] = [];
 
 	ngOnInit(): void {
-		this.advs = this.getList();
+		this.ads = this.getList();
 	}
 
 	getList(): IAdvertisementListModel[] {
@@ -25,17 +25,17 @@ export class AdvertisementComponent implements MfeListBase, OnInit {
 			{
 				id: "1",
 				text: "Advertisement 1",
-				image: "./assets/ads1.webp",
+				image: "./assets/mfe2/adv1.jpg",
 			},
 			{
 				id: "2",
 				text: "Advertisement 2",
-				image: "./assets/ads2.webp",
+				image: "./assets/mfe2/adv2.jpg",
 			},
 			{
 				id: "3",
-				text: "Advertisement3",
-				image: "./assets/ads3.webp",
+				text: "Advertisement 3",
+				image: "./assets/mfe2/adv3.jpg",
 			},
 		];
 	}

@@ -4,8 +4,10 @@
 
 ## Structure
 **Application Shell**: loads dynamically two microfrontend aplication using both routes and single standalone components;
-**mfe1** and **mfe2**: applications that expose routes (with included dynamic rendering of a lazy component) and a standalone component to be loaded by the shell.
-**mfe-common**: library that allow to share components and classes.
+
+**mfe1** and **mfe2**: applications that expose routes (with included dynamic rendering of a lazy component) and a standalone component to be loaded by the shell;
+
+**mfe-common**: library that allow to share components and classes;
 
 ## Start
 

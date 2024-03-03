@@ -31,7 +31,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
 		const remotes = Object.values(manifest);
 		this.remoteRoutes = remotes.filter(r => r.exposedModule === "./routes");
-		this.remoteComponents = remotes.filter(r => r.purpose !== "advertisement");
+		this.remoteComponents = remotes.filter(r => r.purpose !== "advertisement" && r.exposedModule !== "./routes");
 		this.advertisementComponents = remotes.filter(r => r.purpose === "advertisement");
 	}
 

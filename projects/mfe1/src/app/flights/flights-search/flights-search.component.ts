@@ -1,7 +1,7 @@
 import { Component, ViewChild, ViewContainerRef } from "@angular/core";
 import { LazyComponent } from "../lazy/lazy.component";
 @Component({
-	selector: "app-flights-search",
+	selector: "mfe1-flights-search",
 	templateUrl: "./flights-search.component.html",
 	styleUrl: "./flights-search.component.scss",
 	standalone: true,

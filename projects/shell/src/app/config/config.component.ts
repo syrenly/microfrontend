@@ -4,7 +4,7 @@ import { Component } from "@angular/core";
 import { CustomManifest } from "mfe-common";
 
 @Component({
-	selector: "app-config",
+	selector: "shell-config",
 	templateUrl: "./config.component.html",
 	standalone: true,
 	imports: [JsonPipe],

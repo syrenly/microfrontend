@@ -1,27 +1,35 @@
-<ul>
-	<li>
+<div class="routes">
+	<div>
 		<img
 			src="../assets/angular.png"
 			width="50" />
-	</li>
-	<li><a routerLink="/">Home</a></li>
+	</div>
+	<div class="route"><a routerLink="/">Home</a></div>
 
 	<!-- Dynamically create menu items for all Micro Frontends -->
-	<li *ngFor="let remote of remoteRoutes">
+	<div
+		class="route"
+		*ngFor="let remote of remoteRoutes">
 		<a [routerLink]="remote.routePath">{{ remote.displayName }}</a>
-	</li>
-	<!-- <li *ngFor="let remote of remoteComponents; let i = index">
+	</div>
+	<div class="route"><a routerLink="/config">Config</a></div>
+</div>
+
+<div class="dynamic-components">
+	<div
+		class="dynamic-component"
+		*ngFor="let remote of remoteComponents; let i = index">
 		<a (click)="renderComponent(i)">{{ remote.displayName }}</a>
-	</li>
-	 -->
-	<li><a routerLink="/config">Config</a></li>
-</ul>
+	</div>
+</div>
 
-<router-outlet></router-outlet>
+<div class="inner-body">
+	<router-outlet></router-outlet>
 
-<div #viewContainer></div>
+	<ng-container #viewContainer></ng-container>
+</div>
 <div
-	[style.height.px]="50"
+	[style.height.px]="100"
 	[style.max-width.%]="33">
 	<ng-container #advertisementViewContainer></ng-container>
 </div>

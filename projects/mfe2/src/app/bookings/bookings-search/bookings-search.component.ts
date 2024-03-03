@@ -1,7 +1,7 @@
 import { Component, ViewChild, ViewContainerRef } from "@angular/core";
 
 @Component({
-	selector: "app-bookings-search",
+	selector: "mfe2-bookings-search",
 	styleUrl: "./bookings-search.component.scss",
 	templateUrl: "./bookings-search.component.html",
 	standalone: true,

@@ -1,2 +1,4 @@
-declare module 'mfe1/Component';
-declare module 'mfe1/Module';
+// needed for static microfrontend
+// declare module "mfe1/*";
+// declare module "mfe2/*";
+

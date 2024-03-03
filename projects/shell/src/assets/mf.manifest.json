@@ -1,16 +1,31 @@
 {
-  "mfe1": {
-    "remoteEntry": "http://localhost:4201/remoteEntry.js",
-    "exposedModule": "./Module",
-    "displayName": "Flights",
-    "routePath": "flights",
-    "ngModuleName": "FlightsModule"
-  },
-  "mfe2": {
-    "remoteEntry": "http://localhost:4202/remoteEntry.js",
-    "exposedModule": "./Module",
-    "displayName": "Bookings",
-    "routePath": "bookings",
-    "ngModuleName": "BookingsModule"
-  }
+	"mfe1": {
+		"remoteEntry": "http://localhost:4201/remoteEntry.js",
+		"exposedModule": "./routes",
+		"displayName": "Flights",
+		"routePath": "flights",
+		"ngModuleName": "FLIGHTS_ROUTES"
+	},
+	"mfe2": {
+		"remoteEntry": "http://localhost:4202/remoteEntry.js",
+		"exposedModule": "./routes",
+		"displayName": "Bookings",
+		"routePath": "bookings",
+		"ngModuleName": "BOOKING_ROUTES"
+	},
+	"HotelComponent": {
+		"remoteEntry": "http://localhost:4201/remoteEntry.js",
+		"displayName": "HotelComponent",
+		"exposedModule": "./HotelComponent",
+		"ngModuleName": "HotelComponent",
+		"purpose": "hotel"
+	},
+	"AdvertisementComponent": {
+		"remoteEntry": "http://localhost:4202/remoteEntry.js",
+		"displayName": "AdvertisementComponent",
+		"exposedModule": "./AdvertisementComponent",
+		"ngModuleName": "AdvertisementComponent",
+		"purpose": "advertisement"
+	}
 }
+

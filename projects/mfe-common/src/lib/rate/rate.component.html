@@ -1,0 +1,6 @@
+@for (r of [].constructor(rate); track r) {
+	<fa-icon [icon]="faStarSolid"></fa-icon>
+}
+@for (r of [].constructor(Rate.FiveStars - rate); track r) {
+	<fa-icon [icon]="faStarOutlined"></fa-icon>
+}

@@ -9,6 +9,6 @@ export const APP_ROUTES: Routes = [
 	},
 	{
 		path: "flights",
-		loadChildren: () => import("./flights/flights.module").then(m => m.FlightsModule),
+		loadChildren: () => import("./flights/flights.routes").then(r => r.FLIGHTS_ROUTES),
 	},
 ];

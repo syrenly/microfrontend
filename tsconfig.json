@@ -1,19 +1,22 @@
 {
-    "compileOnSave": false,
-    "compilerOptions": {
-        "baseUrl": "./",
-        "outDir": "./dist/out-tsc",
-        "sourceMap": true,
-        "declaration": false,
-        "downlevelIteration": true,
-        "experimentalDecorators": true,
-        "module": "ES2020",
-        "allowJs": true,
-        "moduleResolution": "node",
-        "importHelpers": false,
-        "target": "ES2022",
-        "strict": true,
-        "lib": ["es2018", "dom"],
-        "useDefineForClassFields": false
-    }
+	"compileOnSave": false,
+	"compilerOptions": {
+		"baseUrl": "./",
+		"outDir": "./dist/out-tsc",
+		"sourceMap": true,
+		"declaration": false,
+		"downlevelIteration": true,
+		"experimentalDecorators": true,
+		"module": "ES2020",
+		"paths": {
+			"mfe-common": ["./projects/mfe-common/src/public-api"]
+		},
+		"allowJs": true,
+		"moduleResolution": "node",
+		"importHelpers": false,
+		"target": "ES2022",
+		"strict": true,
+		"lib": ["es2018", "dom"],
+		"useDefineForClassFields": false
+	}
 }

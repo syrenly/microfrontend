@@ -1,20 +1,20 @@
 import { Component, ViewChild, ViewContainerRef } from "@angular/core";
-
+import { LazyComponent } from "../lazy/lazy.component";
 @Component({
-	selector: "app-flights-search",
+	selector: "mfe1-flights-search",
 	templateUrl: "./flights-search.component.html",
+	styleUrl: "./flights-search.component.scss",
+	standalone: true,
 })
 export class FlightsSearchComponent {
-	@ViewChild("vc", { read: ViewContainerRef, static: true })
-	viewContainer: ViewContainerRef | undefined;
+	@ViewChild("viewContainer", { read: ViewContainerRef, static: true })
+	viewContainer!: ViewContainerRef;
 
 	search(): void {
 		alert("Not implemented for this demo!");
 	}
 
-	async terms(): Promise<void> {
-		const comp = await import("../lazy/lazy.component").then(m => m.LazyComponent);
-
-		this.viewContainer?.createComponent(comp);
+	terms(): void {
+		this.viewContainer.createComponent(LazyComponent);
 	}
 }

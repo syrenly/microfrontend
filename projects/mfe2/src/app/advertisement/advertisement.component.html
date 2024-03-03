@@ -1,0 +1,8 @@
+<div class="image-list">
+	@for (ad of ads; track ad.id) {
+		<img
+			class="adv-image"
+			src="{{ ad.image }}"
+			alt="{{ ad.text }}" />
+	}
+</div>

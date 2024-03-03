@@ -9,6 +9,6 @@ export const APP_ROUTES: Routes = [
 	},
 	{
 		path: "bookings",
-		loadChildren: () => import("./bookings/bookings.module").then(m => m.BookingsModule),
+		loadChildren: () => import("./bookings/bookings.routes").then(r => r.BOOKING_ROUTES),
 	},
 ];

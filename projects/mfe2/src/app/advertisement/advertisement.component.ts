@@ -25,17 +25,17 @@ export class AdvertisementComponent implements MfeListBase, OnInit {
 			{
 				id: "1",
 				text: "Advertisement 1",
-				image: "./ads1.webp",
+				image: "./assets/ads1.webp",
 			},
 			{
 				id: "2",
 				text: "Advertisement 2",
-				image: "./ads2.webp",
+				image: "./assets/ads2.webp",
 			},
 			{
 				id: "3",
 				text: "Advertisement3",
-				image: "./ads3.webp",
+				image: "./assets/ads3.webp",
 			},
 		];
 	}

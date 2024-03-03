@@ -15,14 +15,14 @@
 	},
 	"HotelComponent": {
 		"remoteEntry": "http://localhost:4201/remoteEntry.js",
-		"displayName": "Hotels",
+		"displayName": "HotelComponent",
 		"exposedModule": "./HotelComponent",
 		"ngModuleName": "HotelComponent",
 		"purpose": "hotel"
 	},
 	"AdvertisementComponent": {
 		"remoteEntry": "http://localhost:4202/remoteEntry.js",
-		"displayName": "Advertisement",
+		"displayName": "AdvertisementComponent",
 		"exposedModule": "./AdvertisementComponent",
 		"ngModuleName": "AdvertisementComponent",
 		"purpose": "advertisement"

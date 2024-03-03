@@ -1,8 +1,11 @@
 # Microfrontend
 
-👋 Hi! This is a demo for an Angular 17 application with dynamic microfrontend: based on the package **@angular-architects/module-federation** an **@nx**, the microfrontend applications will be dynamically loaded through the router.
+👋 Hi! This is a demo for an Angular 17 application with dynamic microfrontends: based on the package **@angular-architects/module-federation** an **@nx**, the microfrontend applications will be dynamically loaded in two ways through the router and using dynamic rendering of exposed components.
 
-Demonstrates webpack 5 Module Federation 17 with Angular 17 and the Angular Router.
+## Structure
+**Application Shell**: loads dynamically two microfrontend aplication using both routes and single standalone components;
+**mfe1** and **mfe2**: applications that expose routes (with included dynamic rendering of a lazy component) and a standalone component to be loaded by the shell.
+**mfe-common**: library that allow to share components and classes.
 
 ## Start
 

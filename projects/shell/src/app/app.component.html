@@ -10,12 +10,15 @@
 	<li *ngFor="let remote of remoteRoutes">
 		<a [routerLink]="remote.routePath">{{ remote.displayName }}</a>
 	</li>
-	<li *ngFor="let remote of remoteComponents; let i = index">
+	<!-- <li *ngFor="let remote of remoteComponents; let i = index">
 		<a (click)="renderComponent(i)">{{ remote.displayName }}</a>
 	</li>
+	 -->
 	<li><a routerLink="/config">Config</a></li>
 </ul>
 
 <router-outlet></router-outlet>
 
 <div #viewContainer></div>
+
+<div #advertisementViewContainer></div>

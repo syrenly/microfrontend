@@ -5,6 +5,7 @@ module.exports = withModuleFederationPlugin({
 
 	exposes: {
 		"./routes": "./projects/mfe2/src/app/bookings/bookings.routes",
+		"./AdvertisementComponent": "./projects/mfe2/src/app/advertisement/advertisement.component",
 	},
 
 	shared: {

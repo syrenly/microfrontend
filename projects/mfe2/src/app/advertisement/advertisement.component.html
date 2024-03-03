@@ -1,0 +1,10 @@
+<div id="container">
+	<div class="image-list">
+		@for (a of advs; track a.id) {
+			<img
+				class="adv-image"
+				[src]="a.image"
+				[alt]="a.text" />
+		}
+	</div>
+</div>

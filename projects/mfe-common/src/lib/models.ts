@@ -1,9 +1,6 @@
-export interface INearbyModel {
+export interface IListModel {
 	id: string;
 	text: string;
-	distance: string;
-	rate: Rate;
-	// component: Component;
 }
 
 export enum Rate {

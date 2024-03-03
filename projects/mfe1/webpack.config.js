@@ -4,7 +4,7 @@ module.exports = withModuleFederationPlugin({
 	name: "mfe1",
 	exposes: {
 		"./routes": "./projects/mfe1/src/app/flights/flights.routes",
-		"./NearbyComponent": "./projects/mfe1/src/app/hotel/hotel.component",
+		"./HotelComponent": "./projects/mfe1/src/app/hotel/hotel.component",
 	},
 	shared: {
 		...shareAll({ singleton: true, strictVersion: true, requiredVersion: "auto" }),

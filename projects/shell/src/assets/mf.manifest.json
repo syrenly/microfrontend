@@ -13,11 +13,19 @@
 		"routePath": "bookings",
 		"ngModuleName": "BOOKING_ROUTES"
 	},
-	"NearbyComponent": {
+	"HotelComponent": {
 		"remoteEntry": "http://localhost:4201/remoteEntry.js",
-		"displayName": "HotelComponent",
-		"exposedModule": "./NearbyComponent",
-		"ngModuleName": "HotelComponent"
+		"displayName": "Hotels",
+		"exposedModule": "./HotelComponent",
+		"ngModuleName": "HotelComponent",
+		"purpose": "hotel"
+	},
+	"AdvertisementComponent": {
+		"remoteEntry": "http://localhost:4202/remoteEntry.js",
+		"displayName": "Advertisement",
+		"exposedModule": "./AdvertisementComponent",
+		"ngModuleName": "AdvertisementComponent",
+		"purpose": "advertisement"
 	}
 }
 

@@ -1,3 +1,11 @@
-<ul>
-	<li *ngFor="let h of hotels">{{ h.text }}</li>
-</ul>
+<div id="container">
+	<h1>Your Last Hotels</h1>
+	<div>
+		@for (h of hotels; track h.id) {
+			<div>
+				<mfe-rate [rate]="h.rate"></mfe-rate>
+				<span>{{ h.text }}</span>
+			</div>
+		}
+	</div>
+</div>

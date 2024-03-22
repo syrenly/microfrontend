@@ -13,13 +13,17 @@ import { buildRoutes } from "./utils/routes";
 	imports: [RouterLink, NgFor, RouterOutlet],
 })
 export class AppComponent implements OnInit, AfterViewInit {
+	/** Where the remote component will be rendered */
 	@ViewChild("viewContainer", { read: ViewContainerRef, static: true })
 	viewContainer!: ViewContainerRef;
+	/** Where the remote advertisement component will be rendered */
 	@ViewChild("advertisementViewContainer", { read: ViewContainerRef, static: true })
 	advertisementViewContainer!: ViewContainerRef;
-
+	/** List of remote components */
 	remoteComponents: CustomRemoteConfig[] = [];
+	/** List of remote routes */
 	remoteRoutes: CustomRemoteConfig[] = [];
+	/** List of advertisement components */
 	advertisementComponents: CustomRemoteConfig[] = [];
 
 	constructor(private router: Router) {}
@@ -38,17 +42,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 	ngAfterViewInit(): void {
 		this.renderAdvertisements();
 	}
-
-	private renderAdvertisements(): void {
-		this.advertisementViewContainer.clear();
-		const { remoteEntry, exposedModule, displayName } = this.advertisementComponents[0];
-		loadRemoteModule({
-			type: "module",
-			remoteEntry,
-			exposedModule,
-		}).then(c => this.advertisementViewContainer.createComponent(c[displayName]));
-	}
-
+	/** Method to dynamically render the remote component */
 	renderComponent(index: number): void {
 		this.viewContainer.clear();
 		const { remoteEntry, exposedModule, displayName } = this.remoteComponents[index];
@@ -57,5 +51,15 @@ export class AppComponent implements OnInit, AfterViewInit {
 			remoteEntry,
 			exposedModule,
 		}).then(c => this.viewContainer.createComponent(c[displayName]));
+	}
+	/** Method to dynamically render the advertisement remote component */
+	private renderAdvertisements(): void {
+		this.advertisementViewContainer.clear();
+		const { remoteEntry, exposedModule, displayName } = this.advertisementComponents[0];
+		loadRemoteModule({
+			type: "module",
+			remoteEntry,
+			exposedModule,
+		}).then(c => this.advertisementViewContainer.createComponent(c[displayName]));
 	}
 }

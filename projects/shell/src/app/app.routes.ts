@@ -15,10 +15,11 @@ export const APP_ROUTES: Routes = [
 	},
 ];
 /** Add this routes to APP_ROUTES if you need to implement a static import (you will need other changes) */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const ROUTES_FOR_STATIC_IMPORT: Routes = [
 	{
 		path: "flights",
-		loadChildren: (): Promise<any> =>
+		loadChildren: (): Promise<Routes> =>
 			loadRemoteModule({
 				type: "manifest",
 				remoteName: "mfe1",
@@ -27,7 +28,7 @@ const ROUTES_FOR_STATIC_IMPORT: Routes = [
 	},
 	{
 		path: "bookings",
-		loadChildren: (): Promise<any> =>
+		loadChildren: (): Promise<Routes> =>
 			loadRemoteModule({
 				type: "manifest",
 				remoteName: "mfe2",

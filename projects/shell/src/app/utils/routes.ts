@@ -17,7 +17,7 @@ export function buildRoutes(options: CustomManifest): Routes {
 			const entry = options[key];
 			return {
 				path: entry.routePath,
-				loadChildren: (): Promise<any> =>
+				loadChildren: (): Promise<Routes> =>
 					loadRemoteModule({
 						type: "manifest",
 						remoteName: key,

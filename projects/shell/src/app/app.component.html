@@ -1,6 +1,7 @@
 <div class="routes">
 	<div>
 		<img
+			alt="Angular Logo"
 			src="../assets/angular.png"
 			width="50" />
 	</div>
@@ -19,7 +20,11 @@
 	<div
 		class="dynamic-component"
 		*ngFor="let remote of remoteComponents; let i = index">
-		<a (click)="renderComponent(i)">{{ remote.displayName }}</a>
+		<a
+			(click)="renderComponent(i)"
+			[attr.role]="'none'">
+			{{ remote.displayName }}
+		</a>
 	</div>
 </div>
 

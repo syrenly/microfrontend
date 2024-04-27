@@ -9,4 +9,3 @@ import { AdvertisementComponent } from "./advertisement/advertisement.component"
 	imports: [RouterOutlet, AdvertisementComponent],
 })
 export class AppComponent {}
-

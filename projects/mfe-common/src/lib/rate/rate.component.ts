@@ -9,7 +9,6 @@ import { Rate } from "../models";
 	standalone: true,
 	imports: [FontAwesomeModule],
 	templateUrl: "./rate.component.html",
-	styleUrl: "./rate.component.scss",
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RateComponent {

@@ -1,25 +1,27 @@
 # Microfrontend
 
-👋 Hi! This is a demo for an Angular 17 application with dynamic microfrontends: based on the package **@angular-architects/module-federation** an **@nx**, the microfrontend applications will be dynamically loaded in two ways through the router and using dynamic rendering of exposed components.
-This demo has focus on architecture, so no tests and no particular styles are implemented.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
 
-## Structure
+## Development server
 
-**Application Shell**: loads dynamically two microfrontend application using both routes and single standalone components; it provides a proxy to access the assets of the microfrontends.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-**mfe1** and **mfe2**: applications that expose routes (with included dynamic rendering of a lazy component) and a standalone component to be loaded by the shell;
+## Code scaffolding
 
-**mfe-common**: library that allow to share components and classes;
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Start
+## Build
 
--   Install dependencies with npm
--   Run Micro Frontend 1 with the following command `ng serve mfe1 -o`
--   Run Micro Frontend 2 with the following command `ng serve mfe2 -o`
--   Run the shell (the application that hosts the microfrontend applications. Be sure to run the shell last) with the following command `ng serve shell -o`
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Lint
+## Running unit tests
 
-Run `npm run eslint` to run the ES lint.
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-Run `npm run eslint:fix` to run the ES lint and apply fixes.
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

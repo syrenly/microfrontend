@@ -3,16 +3,13 @@
 	"ignorePatterns": [
 		".nx/",
 		".vscode/*",
-		"*.d.ts",
-		"*.js",
 		"*.yaml",
 		"*.yml",
 		"**/*.mock.ts",
 		"coverage/",
 		"dist/*",
 		"Docker",
-		"node_modules/*",
-		"**/e2e/"
+		"node_modules/*"
 	],
 	"overrides": [
 		{
@@ -25,6 +22,20 @@
 				"plugin:prettier/recommended"
 			],
 			"rules": {
+				"@angular-eslint/directive-selector": [
+					"error",
+					{
+						"type": "attribute",
+						"style": "camelCase"
+					}
+				],
+				"@angular-eslint/component-selector": [
+					"error",
+					{
+						"type": "element",
+						"style": "kebab-case"
+					}
+				],
 				"prettier/prettier": "error"
 			}
 		},

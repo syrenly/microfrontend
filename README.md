@@ -1,6 +1,9 @@
+# 🚧 WARNING! REWORK IN PROGRESS 🚧
+The project is currently deprecated. You can follow the rework on the branch [new-microfrontend](https://github.com/syrenly/microfrontend/tree/new-microfrontend). The original project was migrated from previous versions of Angular to 17 and it contained deprecations, old files and unnecessary configurations.🧹 Cleaning needed!
+
 # Microfrontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0. and migrated to 17.0.0.
 
 ## Development server
 

@@ -1,0 +1,26 @@
+{
+	"extends": "../../.eslintrc.json",
+	"overrides": [
+		{
+			"files": ["*.ts"],
+			"rules": {
+				"@angular-eslint/directive-selector": [
+					"error",
+					{
+						"type": "attribute",
+						"prefix": "mfe2",
+						"style": "camelCase"
+					}
+				],
+				"@angular-eslint/component-selector": [
+					"error",
+					{
+						"type": "element",
+						"prefix": "mfe2",
+						"style": "kebab-case"
+					}
+				]
+			}
+		}
+	]
+}

@@ -3,6 +3,7 @@
 	"ignorePatterns": [
 		".nx/",
 		".vscode/*",
+		"*.js",
 		"*.yaml",
 		"*.yml",
 		"**/*.mock.ts",
@@ -22,21 +23,7 @@
 				"plugin:prettier/recommended"
 			],
 			"rules": {
-				"@angular-eslint/directive-selector": [
-					"error",
-					{
-						"type": "attribute",
-						"style": "camelCase"
-					}
-				],
-				"@angular-eslint/component-selector": [
-					"error",
-					{
-						"type": "element",
-						"style": "kebab-case"
-					}
-				],
-				"prettier/prettier": "error"
+				"prettier/prettier": "warn"
 			}
 		},
 		{

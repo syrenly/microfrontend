@@ -14,6 +14,9 @@
 		"noImplicitOverride": true,
 		"noImplicitReturns": true,
 		"noPropertyAccessFromIndexSignature": true,
+		"paths": {
+			"mfe-common": ["./projects/mfe-common/src/public-api"]
+		},
 		"outDir": "./dist/out-tsc",
 		"sourceMap": true,
 		"strict": true,

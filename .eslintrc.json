@@ -3,6 +3,7 @@
 	"ignorePatterns": [
 		".nx/",
 		".vscode/*",
+		"*.d.ts",
 		"*.js",
 		"*.yaml",
 		"*.yml",

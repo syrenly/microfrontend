@@ -5,11 +5,11 @@ This demo has focus on architecture, so no tests and no particular styles are im
 
 ## Structure
 
-**Application Shell**: loads dynamically two microfrontend application using both routes and single standalone components; it provides a proxy to access the assets of the microfrontends.
+**Application Shell**: loads dynamically two microfrontend applications using both routes and single standalone components; it provides a proxy to access the assets of the microfrontends.
 
-**mfe1** and **mfe2**: applications that expose routes (with included dynamic rendering of a lazy component) and a standalone component to be loaded by the shell;
+**mfe1** and **mfe2**: applications that expose routes and a standalone component to be loaded by the shell;
 
-**mfe-common**: library that allow to share components and classes;
+**mfe-common**: library that allow to share components and classes between all the applications;
 
 ## Start
 

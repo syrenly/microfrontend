@@ -1,6 +1,6 @@
 # Microfrontend
 
-👋 Hi! This is a demo for an Angular 17 application with dynamic microfrontends: based on the package **@angular-architects/module-federation** an **@nx**, the microfrontend applications will be dynamically loaded in two ways through the router and using dynamic rendering of exposed components.
+👋 Hi! This is a demo for an Angular 17 application with dynamic microfrontends: based on the package **@angular-architects/module-federation**, the microfrontend applications will be dynamically loaded in two ways through the router and using dynamic rendering of exposed components.
 This demo has focus on architecture, so no tests and no particular styles are implemented.
 
 ## Structure
